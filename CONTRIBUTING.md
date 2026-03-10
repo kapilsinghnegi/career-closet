@@ -2,7 +2,7 @@
 
 Thank you for contributing!
 
-We welcome all contributors, regardless of skill level. If you have a question, comment, or need help, please don't hesitate to ask in the [Career Closet Discord](https://discord.gg/5d8DSWbc7F).
+We welcome all contributors, regardless of skill level. If you have a question, comment, or need help, please don't hesitate to ask in the [Career Closet Discord](https://discord.gg/yuEzkjgv5X).
 
 ---
 
