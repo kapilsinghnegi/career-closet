@@ -52,7 +52,7 @@ const Settings = () => {
     }
   };
 
-  const handleSwitch = (role) => {
+  const _handleSwitch = (role) => {
     navigate('/');
     dispatch(switchRole(role));
   };

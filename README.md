@@ -154,3 +154,11 @@ Thanks to everyone who contributed to this project.
 We are a global, collaborative team and expect respectful, inclusive behavior from everyone.
 
 Please read: [**CODE_OF_CONDUCT.md**](CODE_OF_CONDUCT.md)
+
+## License
+
+This project is open source and available under the _MIT License_.
+
+## Support
+
+If you like this project, consider giving it a ⭐ on GitHub.
