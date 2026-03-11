@@ -1,78 +1,137 @@
-# mint-narcissus
+# Career Closet
 
-Repository for **Team Mint Narcissus** - Spring 2026 Cohort
+Career Closet is a community-driven platform where professionals can **lend and borrow interview outfits**, helping job seekers feel confident without the financial burden of buying formal clothing.
 
----
+Originally built during the [**Spring 2026 cohort project**](https://github.com/NHCarrigan-Spring-Cohort-2026-Archive/mint-narcissus), this repository is now being actively maintained and improved.
 
-## Team
-
-### Leadership
-
-| Name            | GitHub                             |
-| --------------- | ---------------------------------- |
-| Pawan Singh     | https://github.com/pie-1           |
-| Prince Ubakaeze | https://github.com/Prince-Ubakaeze |
-
-### Participants
-
-| Name                | GitHub                                 |
-| ------------------- | -------------------------------------- |
-| Bhen                | https://github.com/DevBehn             |
-| Jaco Botha          | https://github.com/206CE               |
-| Kapil Negi          | https://github.com/kapilsinghnegi      |
-| Krutika Waghmare    | https://github.com/Krutika-Waghmare    |
-| O'Hare              | https://github.com/weller7             |
-| Prakash Sankhla     | https://github.com/prakash601          |
-| Sergio Pardo        | https://github.com/SergioPardoSanchez  |
-| Syed Zahaab Hussain | https://github.com/Syed-Zahaab-Hussain |
-| Uk_2004             | https://github.com/Utk2oo4             |
+![GitHub contributors](https://img.shields.io/github/contributors/kapilsinghnegi/career-closet)
+![GitHub stars](https://img.shields.io/github/stars/kapilsinghnegi/career-closet)
+![GitHub forks](https://img.shields.io/github/forks/kapilsinghnegi/career-closet)
 
 ---
 
-## Project Overview
+## Project Vision
 
-### Interview Outfit Coordinator
+Job interviews are stressful enough without worrying about whether you have the right clothes.
 
-**“Look good, land the job.”**
+Career Closet connects:
 
-Job interviews are stressful enough without worrying about whether you have appropriate clothes to wear. This platform connects people who need interview-appropriate outfits with donors who have professional clothing to give.
+- People who need interview outfits
+- Professionals willing to lend or donate clothing
+- The focus is dignity and confidence — not charity.
 
-The key is dignity — this isn't a thrift store vibe, it's more like "borrow my lucky blazer." How do you match people with clothes that fit and suit the job they're interviewing for? How do you handle sizing sensitively? And how do you make someone feel confident walking into that interview, not like they're wearing someone's castoffs?
+Think of it as: “Borrow my lucky blazer.”
 
-Key challenges include:
+## Features
 
-- Matching outfits appropriately by role and context
-- Handling sizing and fit sensitively
-- Ensuring users feel confident and respected throughout the process
+### Borrower
+
+- Browse available interview outfits
+- Filter by category, size, fit, and interview type)
+- Save outfits
+- View detailed outfit information
+- Send borrow requests
+- Track request status in My Requests
+
+### Lender
+
+- List outfits to share
+- Manage listed outfits
+- Update outfit availability
+- Approve or decline borrow requests
+- Track borrowed outfits
+
+---
+
+## Tech Stack
+
+### Frontend
+
+- React
+- Redux Toolkit
+- React Router
+- Tailwind CSS
+- ShadCN UI
+
+### Backend
+
+Microservice architecture using Node.js.
+
+Current services include:
+
+- Auth Service
+- User Service
+- Outfit Service
+- Request Service
+
+### Tools
+
+- Docker
+- Node.js
+- REST APIs
 
 ---
 
-## How We Work
+## Repository Structure
 
-This project follows an industry-style collaboration workflow:
-
-- **GitHub Issues** → track all work
-- **GitHub Project Board** → sprint visibility and progress
-- **Pull Requests** → all changes are reviewed
-- **Discord** → communication and blockers
+```bash
+career-closet
+│
+├── Backend
+│ └── services
+│ │ ├── auth-service
+│ │ ├── gateway
+│ │ ├── items-service
+│ │ ├── messaging-service
+│ │ └── requests-service
+│ │
+│ └── shared
+│ │ └── logger
+│ │
+│ └── docker-compose.yml
+│
+├── Frontend
+│ ├── src
+│ │ ├── api
+│ │ ├── components
+│ │ ├── pages
+│ │ ├── layouts
+│ │ ├── store
+│ │ └── utils
+│ │
+│ └── public
+│
+├── .github
+│ └── PULL_REQUEST_TEMPLATE.md
+│
+└── README.md
+```
 
 ---
 
-## Project Board
+## Getting Started
 
-We use a GitHub Project board to manage sprints and track progress.
+### Clone the repository
 
-**Columns:**
+```bash
+git clone https://github.com/kapilsinghnegi/career-closet.git
+cd career-closet
+```
 
-- Todo
-- In Progress
-- In Review
-- Done
+### Install frontend dependencies and run frontend
 
-Please read the Project Board description before starting work.
-It explains how to move issues across Todo, In Progress, In Review, and Done.
+```bash
+cd Frontend
+npm install
+npm run dev
+```
 
----
+### Run Backend Services
+
+```bash
+cd Backend
+docker compose up
+```
 
 ## Contributing
 
@@ -82,8 +141,24 @@ Before making changes, please read: [**CONTRIBUTING.md**](CONTRIBUTING.md)
 
 ---
 
+## Contributors
+
+Thanks to everyone who contributed to this project.
+
+[![Contributors](https://contrib.rocks/image?repo=kapilsinghnegi/career-closet)](https://github.com/kapilsinghnegi/career-closet/graphs/contributors)
+
+---
+
 ## Code of Conduct
 
 We are a global, collaborative team and expect respectful, inclusive behavior from everyone.
 
 Please read: [**CODE_OF_CONDUCT.md**](CODE_OF_CONDUCT.md)
+
+## License
+
+This project is open source and available under the _MIT License_.
+
+## Support
+
+If you like this project, consider giving it a ⭐ on GitHub.

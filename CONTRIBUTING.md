@@ -1,30 +1,14 @@
-# Contributing to Mint Narcissus
+# Contributing to Career Closet
 
-Thank you for contributing to **Mint Narcissus**, a global cohort project built as part of the Spring 2026 cohort.
+Thank you for contributing!
 
-This document outlines how we collaborate, communicate, and contribute effectively as a distributed team.
-
----
-
-## Cohort Values
-
-This project follows the core principles of the cohort:
-
-- Learning by building real-world projects
-- Collaboration over competition
-- Clear communication and respectful feedback
-- Consistent progress over perfection
-- Ownership and accountability
-
-Everyone here is learning — mistakes are expected and encouraged as part of growth.
+We welcome all contributors, regardless of skill level. If you have a question, comment, or need help, please don't hesitate to ask in the [Career Closet Discord](https://discord.gg/yuEzkjgv5X).
 
 ---
 
 ## Branching Strategy
 
 We use a simple, industry-standard workflow:
-
-### Main Branches
 
 ### Protected Branches
 
@@ -51,172 +35,75 @@ Examples - feature/login-ui, feat/api-endpoint, fix/api-error, docs/update-readm
 
 ---
 
-## Quick Git Workflow
+## Development Workflow
 
-If you are new to Git, follow these steps exactly:
+### 1. Fork the repository
+
+Fork the repository: Click the "Fork" button at the top right of the repository page.
+
+### 2. Clone your forked repository
 
 ```bash
-git checkout dev # checkout dev branch
-git pull origin dev # pull latest changes
-git checkout -b feature/your-task-name # create feature branch
-# make your changes
-git add . # stage changes
-git commit -m "feat: short description" # commit changes
-git push origin feature/your-task-name # push changes
+git clone https://github.com/<your-username>/career-closet.git
 ```
 
-Then open a PR to `dev` → Base branch: `dev`, Compare branch: `<your feature branch>`.
-If unsure, please ask before pushing.
+### 3. Create a branch
 
----
+Use naming conventions as described above.
 
-## Issues
+```bash
+git checkout -b feature/feature-name
+```
 
-Before starting work:
+### 4. Commit using [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
-1. Check existing issues
-2. Assign yourself to an issue
-3. Ask questions in the issue or on Discord if unclear
+```bash
+git add <files>
+git commit -m "<short-description>"
+```
 
-Each issue should clearly define:
+### 5. Push your branch
 
-- What needs to be done
-- Acceptance criteria (when applicable)
+```bash
+git push origin feature/branch-name
+```
+
+### 6. Open a Pull Request
+
+Create a PR targeting `dev` branch: Base branch: `dev`, Compare branch: `<your feature branch>`.
+
+Your PR will be reviewed before merging
 
 ---
 
 ## Pull Requests (PRs)
 
-All contributions must be made via Pull Requests.
-
 ### PR Guidelines
 
 - Keep PRs **small and focused**
+- Code works locally and contains no unnecessary files
+- Follow project structure
 - Link the related issue (e.g. `Closes #12`)
-- Add screenshots or gif for UI changes
-- Write clear descriptions
-- Final approval authority for merges into `main` rests with the Project Leads.
-
-At least one approval is required before merge.
-
-### PR Checklist
-
-- [ ] Code works locally
-- [ ] No unnecessary files included
-- [ ] Follows project structure
-- [ ] Linked to an issue
+- Use clear commit messages
+- Final approval authority for merges into protected branched rests with the Project Maintainers
 
 ---
 
-## Review & Merge Responsibilities
+## Code Review
 
-To keep reviews consistent while remaining beginner-friendly, we follow lightweight review ownership.
-These roles guide reviews, not block collaboration, and rotate between sprints.
+Each PR requires:
 
-### Merge Authority
+- 1 approval for `dev`
+- 2 approvals for `main`
 
-Final approval for merges into `main` and `dev` rests with the Project Leads
-At least one review is required from assignees before any merge from feature branches.
-
-### Review Ownership (Guideline)
-
-| Area           | Primary Review Focus                                                                                                                                   |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Backend & APIs | Node.js / Express, MongoDB, services, API contracts, error handling and validation                                                                     |
-| Frontend & UI  | Reusable React components, UI consistency, accessibility and responsiveness, API integration, clean state management                                   |
-| Overall        | End-to-end flows, high-level review, frontend–backend integration, detecting breaking or risky changes, flagging architectural or integration concerns |
-
-### Role Rotation
-
-- Review responsibilities are not permanent
-- Roles may rotate between sprints to support learning and shared ownership
+Code owners may automatically be requested for review.
 
 ---
 
-## Avoiding Merge Conflicts
+## Reporting Issues
 
-To reduce merge conflicts:
+If you encounter a bug:
 
-- Always start from the latest dev
-- Create one branch per task
-- Keep PRs small
-- Avoid editing the same files as others without coordination
-
-Before opening a PR, sync with dev:
-
-```bash
-git checkout dev # checkout dev branch
-git pull origin dev # pull latest changes
-git checkout your-branch # checkout your branch
-git merge dev # merge dev into your branch
-```
-
-If a conflict occurs:
-
-- Resolve it locally and test
-- Ask for help in Discord if unsure
-- Do not force-push without discussion
-
-## Branch Cleanup
-
-- Feature and fix branches should be short-lived
-- Delete the branch after the PR is merged or closed
-- Do not delete `main` or `dev`
-
----
-
-## Communication
-
-- Daily updates are encouraged
-- Use Discord for:
-  - Questions
-  - Blockers
-  - Clarifications
-- Be respectful and constructive in all feedback
-
----
-
-## Code Quality
-
-- Write readable, maintainable code
-- Prefer clarity over cleverness
-- Comment when logic is not obvious
-- Refactor when needed, but keep scope limited
-
----
-
-## Code Reviews
-
-When reviewing:
-
-- Be kind and specific
-- Focus on the code, not the person
-- Suggest improvements, don’t demand them
-
-When receiving reviews:
-
-- Ask questions if unclear
-- Don’t take feedback personally
-- Apply changes thoughtfully
-
----
-
-## What Not To Do
-
-- Don’t work on large features without an issue
-- Don’t push directly to protected branches
-- Don’t stay blocked silently — ask for help
-- Don’t rewrite someone else’s work without discussion
-
----
-
-## 📌 Final Note
-
-This project is a shared learning experience.
-Your goal is not just to ship features, but to:
-
-- Learn professional workflows
-- Practice teamwork
-- Build something meaningful together
-
-Thank you for contributing 🌱
+1. Open a GitHub Issue
+2. Describe the problem
+3. Include reproduction steps
